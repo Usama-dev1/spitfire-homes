@@ -1,0 +1,800 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link href="./src/output.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="w-full h-auto m-auto">
+      <!-- Header Starts here -->
+      <header class="w-full">
+        <nav class="bg-white shadow max-w-8xl">
+          <div class="grid grid-cols-3 items-center">
+            <!-- left menu -->
+            <ul
+              class="flex flex-row lg:space-x-10 justify-self-start items-center justify-center lg:ml-14"
+            >
+              <li
+                class="nav-links lg:hidden w-25 h-25 flex justify-center items-center"
+              >
+                <i class="fa-solid fa-magnifying-glass"></i>
+              </li>
+              <li
+                class="hover:border-t hover:border-t-taupe-400 hidden xl: lg:block nav-link"
+              >
+                <a href="" class="text-[clamp(10px,1vw,13px)] font-extrabold"
+                  >Find Your Home</a
+                >
+              </li>
+              <li
+                class="group hover:border-t hover:border-t-taupe-400 hidden lg:block nav-link"
+              >
+                <a href="" class="text-[clamp(10px,1vw,13px)] font-extrabold"
+                  >Buying with Spitfire</a
+                >
+
+                <div class="inline group-hover:hidden">
+                  <i class="fa-solid fa-angle-down"></i>
+                </div>
+                <div class="hidden group-hover:inline">
+                  <i class="fa-solid fa-angle-up"></i>
+                </div>
+              </li>
+            </ul>
+
+            <!-- center menu -->
+            <a class="flex justify-center hover:opacity-50">
+              <img
+                src="../images/spitfire_logo.svg"
+                alt="logo"
+                class="h-auto w-[clamp(120px,8vw,140px)]"
+              />
+            </a>
+
+            <!-- right menu -->
+            <ul class="flex items-center justify-self-end">
+              <li
+                class="w-25 h-25 border-gray-lr hidden lg:flex lg:justify-center lg:items-center hover:opacity-50"
+              >
+                <i class="fa-regular text-xl fa-heart hover:opacity-50"></i>
+              </li>
+              <li
+                class="w-25 h-25 hidden border-gray-lr lg:flex lg:justify-center lg:items-center hover:opacity-50"
+              >
+                <i class="fa-regular text-xl fa-circle-user"></i>
+              </li>
+              <li
+                class="w-25 h-25 flex items-center justify-center border-gray-lr hover:pb hover:opacity-50"
+              >
+                <i class="fa-solid fa-bars text-xl"></i>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </header>
+      <!-- Header ends here -->
+
+      <!-- Content area -->
+
+      <!-- Hero Container -->
+      <main class="w-full">
+        <section class="relative w-full h-[clamp(600px,80vh,100vh)]">
+          <!-- background -->
+          <div class="absolute inset-0">
+            <img
+              src="./images/PEMBLETON2388-1-1334x890.jpg"
+              class="w-full h-full object-cover"
+              alt=""
+            />
+            <div class="absolute inset-0 bg-black/40"></div>
+          </div>
+
+          <!-- content -->
+          <div
+            class="absolute left-0 bottom-10 w-full flex flex-col items-center px-4"
+          >
+            <div
+              class="w-full max-w-[clamp(300px,50vw,850px)] text-center mb-4"
+            >
+              <h1 class="text-[clamp(32px,3vw+1rem,60px)] text-white">
+                Creating sustainable communities, designed to inspire
+              </h1>
+            </div>
+
+            <div
+              class="bg-white w-full max-w-80 lg:max-w-4xl px-[30px] py-[15px] lg:py-0 lg:px-0"
+            >
+              <form
+                class="flex flex-col lg:py-8 lg:px-11 lg:flex-row items-center w-full"
+              >
+                <div class="flex-1 relative">
+                  <input
+                    type="text"
+                    name="location"
+                    id="location"
+                    class="w-[280px] h-[46px] outline-none text-xl"
+                    placeholder="Search location"
+                  />
+                  <img
+                    src="./images/location.svg"
+                    alt="location icon"
+                    class="w-4 h-4 lg:hidden absolute right-4 top-1/2 -translate-y-1/2"
+                  />
+                </div>
+
+                <div
+                  class="flex flex-col lg:flex-row items-stretch lg:items-center gap-3 pb-4 sm:pb-0"
+                >
+                  <div class="lg:flex lg:items-center lg:gap-2 hidden">
+                    <img
+                      src="./images/location.svg"
+                      alt="location icon"
+                      class="w-4 h-4"
+                    />
+                    <span class="text-sm">Current location</span>
+                  </div>
+
+                  <button
+                    type="submit"
+                    class="w-[280px] h-[46px] mt-5 lg:mt-0 flex-1 lg:w-auto bg-[#998152] text-white font-semibold uppercase text-xs px-8 py-4 hover:bg-[#867046] transition"
+                  >
+                    Find a Home
+                  </button>
+                </div>
+              </form>
+            </div>
+
+            <a href="#" class="hidden lg:block mt-10">
+              <i
+                class="cursor-pointer text-gray-50/30 text-3xl fa-solid fa-angle-down"
+              ></i>
+            </a>
+          </div>
+        </section>
+        <!-- second section  -->
+        <section class="w-full">
+          <div
+            class="bg-white w-[90%] py-10 xl:py-24 mx-auto md:px-4 2xl:max-w-575"
+          >
+            <div class="grid grid-cols-1 lg:grid-cols-3 2xl:grid-cols-4 gap-4">
+              <!-- Box 1 -->
+              <div
+                class="h-auto bg-white md:pr-[30%] mb-12 lg:col-span-3 2xl:col-span-1"
+              >
+                <h5 class="mb-5 text-xl">
+                  We are an <strong>award winning homebuilder</strong> with a
+                  passion for creating stylish and design led properties that
+                  our customers are proud to call home.
+                </h5>
+
+                <p>
+                  Explore a selection of properties currently available from
+                  Spitfire Homes.
+                </p>
+
+                <a
+                  href="#"
+                  class="inline-block text-[#2A312E] bg-[#F4F4F4] text-[clamp(12px,1.2vw,16px)] font-bold mt-4 py-[16px] px-[29px]"
+                >
+                  Find Your Home
+                </a>
+              </div>
+
+              <div class="bg-white">
+                <div class="">
+                  <img
+                    width="768"
+                    height="512"
+                    src="https://assets.spitfirehomes.co.uk/app/uploads/2023/03/31095248/The-Gate-1-768x512.webp"
+                    alt=""
+                    loading="lazy"
+                    sizes="auto, (max-width: 766px) 75vw, (min-width: 767px) and (max-width: 1680px) 300px, (min-width: 1681px) 600px"
+                    decoding="async"
+                    srcset="
+                      https://assets.spitfirehomes.co.uk/app/uploads/2023/03/31095248/The-Gate-1-768x512.webp   768w,
+                      https://assets.spitfirehomes.co.uk/app/uploads/2023/03/31095248/The-Gate-1-300x200.webp   300w,
+                      https://assets.spitfirehomes.co.uk/app/uploads/2023/03/31095248/The-Gate-1-1024x683.webp 1024w,
+                      https://assets.spitfirehomes.co.uk/app/uploads/2023/03/31095248/The-Gate-1-640x426.webp   640w,
+                      https://assets.spitfirehomes.co.uk/app/uploads/2023/03/31095248/The-Gate-1-767x512.webp   767w,
+                      https://assets.spitfirehomes.co.uk/app/uploads/2023/03/31095248/The-Gate-1-1064x708.webp 1064w,
+                      https://assets.spitfirehomes.co.uk/app/uploads/2023/03/31095248/The-Gate-1-720x480.webp   720w,
+                      https://assets.spitfirehomes.co.uk/app/uploads/2023/03/31095248/The-Gate-1.jpg           1334w
+                    "
+                  />
+                </div>
+                <div class="mt-[19px] mr-[40px]">
+                  <div class="flex items-center gap-4 md:block">
+                    <h6
+                      class="md:mb-5 text-[16px] md:text-[20px] text-[#2A312E] uppercase"
+                    >
+                      About us
+                    </h6>
+                    <span class="md:hidden inline">
+                      <i class="text-[16px] fa-solid fa-angle-right"></i>
+                    </span>
+                  </div>
+
+                  <p class="mb-5 text-[16px] leading-6 hidden md:block">
+                    Forward thinking, design led and committed to quality; we
+                    are Spitfire Homes.
+                  </p>
+                  <span
+                    class="text-[#998152] text-[14px] uppercase hidden md:block"
+                    >Learn More</span
+                  >
+                </div>
+              </div>
+              <div class="bg-white">
+                <div class="">
+                  <a
+                    href="https://spitfirehomes.co.uk/buying-with-spitfire/spitfire-difference/"
+                    class=""
+                  >
+                    <div class="">
+                      <img
+                        width="768"
+                        height="512"
+                        src="https://spitfirehomes.co.uk/app/uploads/2024/06/PEMBLETON2388-1-768x512.jpg"
+                        class=""
+                        alt=""
+                        loading="lazy"
+                        sizes="auto, (max-width: 766px) 75vw, (min-width: 767px) and (max-width: 1680px) 300px, (min-width: 1681px) 600px"
+                        decoding="async"
+                        srcset="
+                          https://spitfirehomes.co.uk/app/uploads/2024/06/PEMBLETON2388-1-768x512.jpg    768w,
+                          https://spitfirehomes.co.uk/app/uploads/2024/06/PEMBLETON2388-1-300x200.jpg    300w,
+                          https://spitfirehomes.co.uk/app/uploads/2024/06/PEMBLETON2388-1-1024x683.jpg  1024w,
+                          https://spitfirehomes.co.uk/app/uploads/2024/06/PEMBLETON2388-1-1536x1024.jpg 1536w,
+                          https://spitfirehomes.co.uk/app/uploads/2024/06/PEMBLETON2388-1-2048x1365.jpg 2048w,
+                          https://spitfirehomes.co.uk/app/uploads/2024/06/PEMBLETON2388-1-640x426.jpg    640w,
+                          https://spitfirehomes.co.uk/app/uploads/2024/06/PEMBLETON2388-1-767x511.jpg    767w,
+                          https://spitfirehomes.co.uk/app/uploads/2024/06/PEMBLETON2388-1-1680x1120.jpg 1680w,
+                          https://spitfirehomes.co.uk/app/uploads/2024/06/PEMBLETON2388-1-1334x890.jpg  1334w,
+                          https://spitfirehomes.co.uk/app/uploads/2024/06/PEMBLETON2388-1-1064x708.jpg  1064w
+                        "
+                      />
+                    </div>
+                    <div class="mt-[19px] mr-[40px]">
+                      <div class="flex items-start gap-2 md:block">
+                        <h6
+                          class="md:mb-5 text-[16px] md:text-[20px] text-[#2A312E] uppercase"
+                        >
+                          The Spitfire Difference
+                        </h6>
+                        <span class="md:hidden inline">
+                          <i class="text-[16px] fa-solid fa-angle-right"></i>
+                        </span>
+                      </div>
+
+                      <p class="mb-5 text-[16px] leading-6 hidden md:block">
+                        At Spitfire, we carefully consider each home as if it
+                        were our own.
+                      </p>
+                      <span
+                        class="text-[#998152] text-[14px] uppercase hidden md:block"
+                        >Learn More</span
+                      >
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="bg-white">
+                <div class="">
+                  <a
+                    href="https://spitfirehomes.co.uk/a-commitment-to-sustainability/"
+                    class="page-block"
+                  >
+                    <div class="">
+                      <img
+                        width="768"
+                        height="512"
+                        src="https://assets.spitfirehomes.co.uk/app/uploads/2025/07/11161300/ROSEDALE2512-768x512.webp"
+                        class=""
+                        alt=""
+                        loading="lazy"
+                        sizes="auto, (max-width: 766px) 75vw, (min-width: 767px) and (max-width: 1680px) 300px, (min-width: 1681px) 600px"
+                        decoding="async"
+                        srcset="
+                          https://assets.spitfirehomes.co.uk/app/uploads/2025/07/11161300/ROSEDALE2512-768x512.webp    768w,
+                          https://assets.spitfirehomes.co.uk/app/uploads/2025/07/11161300/ROSEDALE2512-300x200.webp    300w,
+                          https://assets.spitfirehomes.co.uk/app/uploads/2025/07/11161300/ROSEDALE2512-1024x683.webp  1024w,
+                          https://assets.spitfirehomes.co.uk/app/uploads/2025/07/11161300/ROSEDALE2512-1536x1024.webp 1536w,
+                          https://assets.spitfirehomes.co.uk/app/uploads/2025/07/11161300/ROSEDALE2512-2048x1365.webp 2048w,
+                          https://assets.spitfirehomes.co.uk/app/uploads/2025/07/11161300/ROSEDALE2512-640x426.webp    640w,
+                          https://assets.spitfirehomes.co.uk/app/uploads/2025/07/11161300/ROSEDALE2512-767x511.webp    767w,
+                          https://assets.spitfirehomes.co.uk/app/uploads/2025/07/11161300/ROSEDALE2512-1680x1120.webp 1680w,
+                          https://assets.spitfirehomes.co.uk/app/uploads/2025/07/11161300/ROSEDALE2512-1334x890.webp  1334w,
+                          https://assets.spitfirehomes.co.uk/app/uploads/2025/07/11161300/ROSEDALE2512-1064x708.webp  1064w,
+                          https://assets.spitfirehomes.co.uk/app/uploads/2025/07/11161300/ROSEDALE2512-720x480.webp    720w
+                        "
+                      />
+                    </div>
+                    <div class="mt-[19px] mr-[40px]">
+                      <div class="flex items-center gap-2 md:block">
+                        <h6
+                          class="md:mb-5 text-[16px] md:text-[20px] text-[#2A312E] uppercase"
+                        >
+                          A Commitment to Sustainability
+                        </h6>
+                        <span class="md:hidden inline">
+                          <i class="text-[16px] fa-solid fa-angle-right"></i>
+                        </span>
+                      </div>
+
+                      <p class="mb-5 text-[16px] leading-6 hidden md:block">
+                        Delivering sustainable homes that are as efficient as
+                        they are stylish.
+                      </p>
+                      <span
+                        class="text-[#998152] text-[14px] uppercase hidden md:block"
+                        >Learn More</span
+                      >
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- third section  -->
+
+        <section
+          class="flex flex-col-reverse lg:flex-row lg:items-stretch min-h-[300px] lg:min-h-[700px]"
+        >
+          <div
+            class="w-full lg:w-1/2 bg-[#A2A39A] flex items-center justify-center text-center text-white"
+          >
+            <div
+              class="w-full flex flex-col items-center justify-center pt-[40px] px-[30px] pb-[80px]"
+            >
+              <h5 class="text-white text-[26px] leading-[30px]">
+                Introducing Spitfire Concierge
+              </h5>
+              <p class="mb-4 text-lg my-5 text-center">
+                If you are considering a new home with Spitfire but haven’t sold
+                your existing property, then Spitfire Concierge is for you.
+              </p>
+              <p>
+                <a
+                  class="mt-4 inline-block text-[14px] tracking-[0.5px] leading-[14px] text-white px-[29px] py-[16px] bg-[#2A312E] border-0 uppercase font-semibold no-underline cursor-pointer min-w-[140px] text-center"
+                  href="https://spitfirehomes.co.uk/buying-with-spitfire/concierge/"
+                  tabindex="0"
+                >
+                  FIND OUT MORE
+                </a>
+              </p>
+            </div>
+          </div>
+          <div class="w-full lg:min-h-[700px] lg:w-1/2 flex">
+            <img
+              width="1024"
+              height="683"
+              src="https://assets.spitfirehomes.co.uk/app/uploads/2026/03/18152116/3Z9A5800-Large.webp"
+              alt=""
+              class="w-full h-full object-cover"
+              decoding="async"
+              fetchpriority="high"
+              srcset="
+                https://assets.spitfirehomes.co.uk/app/uploads/2026/03/18152116/3Z9A5800-Large.webp         1024w,
+                https://assets.spitfirehomes.co.uk/app/uploads/2026/03/18152116/3Z9A5800-Large-300x200.webp  300w,
+                https://assets.spitfirehomes.co.uk/app/uploads/2026/03/18152116/3Z9A5800-Large-768x512.webp  768w,
+                https://assets.spitfirehomes.co.uk/app/uploads/2026/03/18152116/3Z9A5800-Large-640x426.webp  640w,
+                https://assets.spitfirehomes.co.uk/app/uploads/2026/03/18152116/3Z9A5800-Large-767x512.webp  767w,
+                https://assets.spitfirehomes.co.uk/app/uploads/2026/03/18152116/3Z9A5800-Large-720x480.webp  720w
+              "
+              sizes="(max-width: 1024px) 100vw, 1024px"
+            />
+          </div>
+        </section>
+
+        <!-- Fourth section  -->
+        <section class="w-full">
+          <div
+            class="bg-white w-[90%] py-10 xl:py-[100px] mx-auto 2xl:max-w-575"
+          >
+            <div class="grid grid-cols-1 lg:grid-cols-3 2xl:grid-cols-4 gap-4">
+              <!-- Box 1 -->
+              <div
+                class="h-auto bg-white md:pr-[30%] mb-12 lg:col-span-3 2xl:col-span-1"
+              >
+                <h5 class="mb-5 text-2xl">
+                  <strong class="font-semibold">Latest News</strong> and
+                  Announcements
+                </h5>
+
+                <p>
+                  The latest news, updates and announcements from Spitfire
+                  Homes.
+                </p>
+
+                <a
+                  href="#"
+                  class="hidden lg:inline-block text-[clamp(12px,1vw,16px)] font-extrabold text-[#2A312E] mt-4 py-[15px] px-[40px] bg-[#F4F4F4]"
+                >
+                  VIEW ALL
+                </a>
+              </div>
+
+              <div class="bg-white">
+                <div class="relative">
+                  <img
+                    width="768"
+                    height="512"
+                    src="https://assets.spitfirehomes.co.uk/app/uploads/2026/03/10130839/ZCS_0080-scaled.webp"
+                    class="attachment-medium_large size-medium_large"
+                    alt=""
+                    loading="lazy"
+                    sizes="auto, (max-width: 766px) 75vw, (min-width: 767px) and (max-width: 1680px) 300px, (min-width: 1681px) 600px"
+                    decoding="async"
+                    srcset="
+                      https://assets.spitfirehomes.co.uk/app/uploads/2026/03/10130839/ZCS_0080-scaled.webp  768w,
+                      https://assets.spitfirehomes.co.uk/app/uploads/2026/03/10130839/ZCS_0080-scaled.webp  300w,
+                      https://assets.spitfirehomes.co.uk/app/uploads/2026/03/10130839/ZCS_0080-scaled.webp 1024w,
+                      https://assets.spitfirehomes.co.uk/app/uploads/2026/03/10130839/ZCS_0080-scaled.webp 1536w,
+                      https://assets.spitfirehomes.co.uk/app/uploads/2026/03/10130839/ZCS_0080-scaled.webp 2048w,
+                      https://assets.spitfirehomes.co.uk/app/uploads/2026/03/10130839/ZCS_0080-scaled.webp  640w,
+                      https://assets.spitfirehomes.co.uk/app/uploads/2026/03/10130839/ZCS_0080-scaled.webp  767w,
+                      https://assets.spitfirehomes.co.uk/app/uploads/2026/03/10130839/ZCS_0080-scaled.webp 1680w,
+                      https://assets.spitfirehomes.co.uk/app/uploads/2026/03/10130839/ZCS_0080-scaled.webp 1334w,
+                      https://assets.spitfirehomes.co.uk/app/uploads/2026/03/10130839/ZCS_0080-scaled.webp 1064w,
+                      https://assets.spitfirehomes.co.uk/app/uploads/2026/03/10130839/ZCS_0080-scaled.webp  720w
+                    "
+                  />
+                  <span
+                    class="absolute text-xs py-[10px] px-[20px] text-white font-normal top-0 left-0 bg-[#A2A39A] uppercase"
+                  >
+                    Updates and blogs
+                  </span>
+                </div>
+                <div class="mt-[19px] mr-[40px]">
+                  <div class="flex flex-col items-start gap-4 md:block">
+                    <span class="block">15 Apr 2026</span>
+                    <h6
+                      class="md:mb-5 text-[16px] md:text-[20px] text-[#2A312E] uppercase"
+                    >
+                      Embrace the Cotswolds Lifestyle without compromise, at
+                      Ellenbrook, Moreton in Marsh
+                    </h6>
+                  </div>
+
+                  <p class="mb-5 text-[16px] leading-6 hidden md:block">
+                    Designed to address a long standing trade-off, Ellenbrook by
+                    Spitfire Homes blends traditional Cotswold craftsmanship
+                    with the ease and efficiency of a brand new property.
+                  </p>
+                  <span class="text-[#998152] text-[14px] uppercase md:block"
+                    >Learn More</span
+                  >
+                </div>
+              </div>
+              <div class="bg-white">
+                <div class="">
+                  <a
+                    href="https://spitfirehomes.co.uk/buying-with-spitfire/spitfire-difference/"
+                    class=""
+                  >
+                    <div class="relative">
+                      <img
+                        width="768"
+                        height="512"
+                        src="https://assets.spitfirehomes.co.uk/app/uploads/2026/04/09144558/ZCS_8128-1-768x512.avif"
+                        class="attachment-medium_large size-medium_large"
+                        alt=""
+                        loading="lazy"
+                        sizes="auto, (max-width: 766px) 75vw, (min-width: 767px) and (max-width: 1680px) 300px, (min-width: 1681px) 600px"
+                        decoding="async"
+                        srcset="
+                          https://assets.spitfirehomes.co.uk/app/uploads/2026/04/09144558/ZCS_8128-1-768x512.avif    768w,
+                          https://assets.spitfirehomes.co.uk/app/uploads/2026/04/09144558/ZCS_8128-1-300x200.avif    300w,
+                          https://assets.spitfirehomes.co.uk/app/uploads/2026/04/09144558/ZCS_8128-1-1024x683.avif  1024w,
+                          https://assets.spitfirehomes.co.uk/app/uploads/2026/04/09144558/ZCS_8128-1-1536x1024.avif 1536w,
+                          https://assets.spitfirehomes.co.uk/app/uploads/2026/04/09144558/ZCS_8128-1-2048x1365.avif 2048w,
+                          https://assets.spitfirehomes.co.uk/app/uploads/2026/04/09144558/ZCS_8128-1-640x426.avif    640w,
+                          https://assets.spitfirehomes.co.uk/app/uploads/2026/04/09144558/ZCS_8128-1-767x511.avif    767w,
+                          https://assets.spitfirehomes.co.uk/app/uploads/2026/04/09144558/ZCS_8128-1-1680x1120.avif 1680w,
+                          https://assets.spitfirehomes.co.uk/app/uploads/2026/04/09144558/ZCS_8128-1-1334x890.avif  1334w,
+                          https://assets.spitfirehomes.co.uk/app/uploads/2026/04/09144558/ZCS_8128-1-1064x708.avif  1064w,
+                          https://assets.spitfirehomes.co.uk/app/uploads/2026/04/09144558/ZCS_8128-1-720x480.avif    720w
+                        "
+                      />
+                      <span
+                        class="absolute text-xs py-[10px] px-[20px] text-white font-normal top-0 left-0 bg-[#A2A39A] uppercase"
+                      >
+                        Updates and blogs
+                      </span>
+                    </div>
+                    <div class="mt-[19px] mr-[40px]">
+                      <div class="flex flex-col items-start gap-4 md:block">
+                        <span class="block">09 Apr 2026</span>
+                        <h6
+                          class="md:mb-5 text-[16px] md:text-[20px] text-[#2A312E] uppercase"
+                        >
+                          Worcestershire artist brings vision of Blackthorn to
+                          life through bespoke commission
+                        </h6>
+                      </div>
+
+                      <p class="mb-5 text-[16px] leading-6 hidden md:block">
+                        Spitfire Homes have partnered with a local artist at our
+                        Blackthorn collection in Crowle, near Worcester.
+                      </p>
+                      <span
+                        class="text-[#998152] text-[14px] uppercase hidden md:block"
+                        >Learn More</span
+                      >
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="bg-white">
+                <div class="">
+                  <a
+                    href="https://spitfirehomes.co.uk/a-commitment-to-sustainability/"
+                    class="page-block"
+                  >
+                    <div class="relative">
+                      <img
+                        width="768"
+                        height="480"
+                        src="https://assets.spitfirehomes.co.uk/app/uploads/2026/04/07175248/Viridian-Edgbaston-Logo-Shadow-Black-768x480.avif"
+                        class="attachment-medium_large size-medium_large"
+                        alt=""
+                        loading="lazy"
+                        sizes="auto, (max-width: 766px) 75vw, (min-width: 767px) and (max-width: 1680px) 300px, (min-width: 1681px) 600px"
+                        decoding="async"
+                        srcset="
+                          https://assets.spitfirehomes.co.uk/app/uploads/2026/04/07175248/Viridian-Edgbaston-Logo-Shadow-Black-768x480.avif    768w,
+                          https://assets.spitfirehomes.co.uk/app/uploads/2026/04/07175248/Viridian-Edgbaston-Logo-Shadow-Black-300x187.avif    300w,
+                          https://assets.spitfirehomes.co.uk/app/uploads/2026/04/07175248/Viridian-Edgbaston-Logo-Shadow-Black-1024x640.avif  1024w,
+                          https://assets.spitfirehomes.co.uk/app/uploads/2026/04/07175248/Viridian-Edgbaston-Logo-Shadow-Black-1536x960.avif  1536w,
+                          https://assets.spitfirehomes.co.uk/app/uploads/2026/04/07175248/Viridian-Edgbaston-Logo-Shadow-Black-2048x1280.avif 2048w,
+                          https://assets.spitfirehomes.co.uk/app/uploads/2026/04/07175248/Viridian-Edgbaston-Logo-Shadow-Black-767x479.avif    767w,
+                          https://assets.spitfirehomes.co.uk/app/uploads/2026/04/07175248/Viridian-Edgbaston-Logo-Shadow-Black-1680x1050.avif 1680w
+                        "
+                      />
+                      <span
+                        class="absolute text-xs py-[10px] px-[20px] text-white font-normal top-0 left-0 bg-[#A2A39A] uppercase"
+                      >
+                        Updates and blogs
+                      </span>
+                    </div>
+                    <div class="mt-[19px] mr-[40px]">
+                      <div class="flex flex-col items-start gap-4 md:block">
+                        <span class="block">07 Apr 2026</span>
+                        <h6
+                          class="md:mb-5 text-[16px] md:text-[20px] text-[#2A312E] uppercase"
+                        >
+                          Spitfire Homes Unveils a First Look at Viridian,
+                          Edgbaston
+                        </h6>
+                      </div>
+
+                      <p class="mb-5 text-[16px] leading-6 hidden md:block">
+                        Prospective homeowners have been given their first
+                        glimpse of Viridian, Edgbaston, as Spitfire unveils the
+                        brand-new address.
+                      </p>
+                      <span
+                        class="text-[#998152] text-[14px] uppercase hidden md:block"
+                        >Learn More</span
+                      >
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <a
+              href="#"
+              class="inline-block w-full max-w-35 lg:hidden text-[clamp(12px,1.2vw,16px)] font-extrabold text-[#2A312E] mt-4 py-[15px] px-[40px] bg-[#F4F4F4]"
+            >
+              VIEW ALL
+            </a>
+          </div>
+        </section>
+
+        <!-- Fifth section  -->
+
+        <section class="bg-[#F4F4F4] w-full px-4 py-10 lg:px-16 lg:py-16">
+          <div class="grid grid-cols-1 md:grid-cols-2 2xl:grid-cols-4 gap-6">
+            <!-- Card -->
+            <a
+              href="#"
+              class="flex flex-row md:flex-col bg-white overflow-hidden shadow-[0_10px_40px_rgba(42,49,46,0.2)] hover:-translate-y-4 transition-all duration-300"
+            >
+              <!-- Image -->
+              <div
+                class="w-1/3 md:w-full flex-shrink-0 overflow-hidden xl:aspect-square[4/3]"
+              >
+                <img
+                  width="1334"
+                  height="890"
+                  src="https://assets.spitfirehomes.co.uk/app/uploads/2024/08/15131839/RUTHERSTONE2867-1334x890.jpg"
+                  class="w-full h-full object-cover"
+                  alt=""
+                  loading="lazy"
+                  decoding="async"
+                  srcset="
+                    https://assets.spitfirehomes.co.uk/app/uploads/2024/08/15131839/RUTHERSTONE2867-1334x890.jpg 1334w,
+                    https://assets.spitfirehomes.co.uk/app/uploads/2024/08/15131839/RUTHERSTONE2867-300x200.jpg   300w,
+                    https://assets.spitfirehomes.co.uk/app/uploads/2024/08/15131839/RUTHERSTONE2867-768x512.jpg   768w,
+                    https://assets.spitfirehomes.co.uk/app/uploads/2024/08/15131839/RUTHERSTONE2867-640x426.jpg   640w
+                  "
+                  sizes="(max-width: 766px) 200px, (min-width: 767px) and (max-width: 1439px) 50vw, 300px"
+                />
+              </div>
+
+              <!-- Content -->
+              <div
+                class="w-2/3 md:w-full flex flex-col justify-center p-4 md:p-6"
+              >
+                <div class="flex flex-row items-center gap-4">
+                  <h6
+                    class="md:mb-[10px] text-[clamp(16px,1vw,20px)] leading-[24px] font-semibold text-[#2A312E]"
+                  >
+                    Land Required
+                  </h6>
+                  <span class="md:hidden inline">
+                    <i class="text-[16px] fa-solid fa-angle-right"></i>
+                  </span>
+                </div>
+                <p class="hidden md:block text-[16px] leading-6">
+                  We are actively seeking new residential development
+                  opportunities across the Midlands region.
+                </p>
+              </div>
+            </a>
+
+            <!-- Card 2 -->
+            <a
+              href="#"
+              class="flex flex-row md:flex-col bg-white overflow-hidden shadow-[0_10px_40px_rgba(42,49,46,0.2)] hover:shadow-md hover:-translate-y-4 transition-all duration-300"
+            >
+              <div
+                class="w-1/3 md:w-full flex-shrink-0 overflow-hidden xl:aspect-square[4/3]"
+              >
+                <img
+                  width="1334"
+                  height="890"
+                  src="https://spitfirehomes.co.uk/app/uploads/2024/06/PEMBLETON2388-1-1334x890.jpg"
+                  alt=""
+                  loading="lazy"
+                  sizes="auto, (max-width: 766px) 200px, (min-width: 767px) and (max-width: 1439px) 50vw, (min-width: 1440px) 300px"
+                  decoding="async"
+                  srcset="
+                    https://spitfirehomes.co.uk/app/uploads/2024/06/PEMBLETON2388-1-1334x890.jpg  1334w,
+                    https://spitfirehomes.co.uk/app/uploads/2024/06/PEMBLETON2388-1-300x200.jpg    300w,
+                    https://spitfirehomes.co.uk/app/uploads/2024/06/PEMBLETON2388-1-1024x683.jpg  1024w,
+                    https://spitfirehomes.co.uk/app/uploads/2024/06/PEMBLETON2388-1-768x512.jpg    768w,
+                    https://spitfirehomes.co.uk/app/uploads/2024/06/PEMBLETON2388-1-1536x1024.jpg 1536w,
+                    https://spitfirehomes.co.uk/app/uploads/2024/06/PEMBLETON2388-1-2048x1365.jpg 2048w,
+                    https://spitfirehomes.co.uk/app/uploads/2024/06/PEMBLETON2388-1-640x426.jpg    640w,
+                    https://spitfirehomes.co.uk/app/uploads/2024/06/PEMBLETON2388-1-767x511.jpg    767w,
+                    https://spitfirehomes.co.uk/app/uploads/2024/06/PEMBLETON2388-1-1680x1120.jpg 1680w
+                  "
+                />
+              </div>
+              <div
+                class="w-2/3 md:w-full flex flex-col justify-center p-4 md:p-6"
+              >
+                <div class="flex flex-row items-center gap-4">
+                  <h6
+                    class="md:mb-[10px] text-[clamp(16px,1vw,20px)] leading-[24px] font-semibold text-[#2A312E]"
+                  >
+                    The Spitfire Difference
+                  </h6>
+                  <span class="md:hidden inline">
+                    <i class="text-[16px] fa-solid fa-angle-right"></i>
+                  </span>
+                </div>
+                <p class="hidden md:block text-[16px] leading-6">
+                  At Spitfire, we carefully consider each home as if it were our
+                  own.
+                </p>
+              </div>
+            </a>
+
+            <!-- Card 3 -->
+            <a
+              href="#"
+              class="group flex flex-row md:flex-col bg-white overflow-hidden shadow-[0_10px_40px_rgba(42,49,46,0.2)] hover:-translate-y-4 transition-all duration-300"
+            >
+              <div
+                class="w-1/3 md:w-full flex-shrink-0 overflow-hidden xl:aspect-square[4/3]"
+              >
+                <img
+                  width="1334"
+                  height="890"
+                  src="https://assets.spitfirehomes.co.uk/app/uploads/2024/10/02144404/ROSEDALE9804-1334x890.webp"
+                  alt=""
+                  loading="lazy"
+                  sizes="auto, (max-width: 766px) 200px, (min-width: 767px) and (max-width: 1439px) 50vw, (min-width: 1440px) 300px"
+                  decoding="async"
+                  srcset="
+                    https://assets.spitfirehomes.co.uk/app/uploads/2024/10/02144404/ROSEDALE9804-1334x890.webp  1334w,
+                    https://assets.spitfirehomes.co.uk/app/uploads/2024/10/02144404/ROSEDALE9804-300x200.webp    300w,
+                    https://assets.spitfirehomes.co.uk/app/uploads/2024/10/02144404/ROSEDALE9804-1024x683.webp  1024w,
+                    https://assets.spitfirehomes.co.uk/app/uploads/2024/10/02144404/ROSEDALE9804-768x512.webp    768w,
+                    https://assets.spitfirehomes.co.uk/app/uploads/2024/10/02144404/ROSEDALE9804-1536x1024.webp 1536w,
+                    https://assets.spitfirehomes.co.uk/app/uploads/2024/10/02144404/ROSEDALE9804-2048x1365.webp 2048w,
+                    https://assets.spitfirehomes.co.uk/app/uploads/2024/10/02144404/ROSEDALE9804-640x426.webp    640w,
+                    https://assets.spitfirehomes.co.uk/app/uploads/2024/10/02144404/ROSEDALE9804-767x511.webp    767w,
+                    https://assets.spitfirehomes.co.uk/app/uploads/2024/10/02144404/ROSEDALE9804-1680x1120.webp 1680w,
+                    https://assets.spitfirehomes.co.uk/app/uploads/2024/10/02144404/ROSEDALE9804-720x480.webp    720w
+                  "
+                />
+              </div>
+              <div
+                class="w-2/3 md:w-full flex flex-col justify-center p-4 md:p-6"
+              >
+                <div class="flex flex-row items-center gap-4">
+                  <h6
+                    class="md:mb-[10px] text-[clamp(16px,1vw,20px)] leading-[24px] font-semibold text-[#2A312E]"
+                  >
+                    Customer Care
+                  </h6>
+                  <span class="md:hidden inline">
+                    <i class="text-[16px] fa-solid fa-angle-right"></i>
+                  </span>
+                </div>
+                <p class="hidden md:block text-[16px] leading-6">
+                  Report an issue, find out about your warranty and provide
+                  feedback on our service.
+                </p>
+              </div>
+            </a>
+
+            <!-- Card 4 -->
+            <a
+              href="#"
+              class="flex flex-row md:flex-col bg-white overflow-hidden shadow-[0_10px_40px_rgba(42,49,46,0.2)] hover:translate-y-4 transition-all duration-300"
+            >
+              <div
+                class="w-1/3 md:w-full flex-shrink-0 overflow-hidden xl:aspect-square[4/3]"
+              >
+                <img
+                  width="1334"
+                  height="890"
+                  src="https://assets.spitfirehomes.co.uk/app/uploads/2023/03/31100022/contact-1334x890.webp"
+                  alt=""
+                  loading="lazy"
+                  sizes="auto, (max-width: 766px) 200px, (min-width: 767px) and (max-width: 1439px) 50vw, (min-width: 1440px) 300px"
+                  decoding="async"
+                  srcset="
+                    https://assets.spitfirehomes.co.uk/app/uploads/2023/03/31100022/contact-1334x890.webp 1334w,
+                    https://assets.spitfirehomes.co.uk/app/uploads/2023/03/31100022/contact-640x426.webp   640w,
+                    https://assets.spitfirehomes.co.uk/app/uploads/2023/03/31100022/contact-720x480.webp   720w
+                  "
+                />
+              </div>
+              <div
+                class="w-2/3 md:w-full flex flex-col justify-center p-4 md:p-6"
+              >
+                <div class="flex flex-row items-center gap-4">
+                  <h6
+                    class="md:mb-[10px] text-[clamp(16px,1vw,20px)] leading-[24px] font-semibold text-[#2A312E]"
+                  >
+                    Contact Us
+                  </h6>
+                  <span class="md:hidden inline">
+                    <i class="text-[16px] fa-solid fa-angle-right"></i>
+                  </span>
+                </div>
+                <p class="hidden md:block text-[16px] leading-6">
+                  Find out how to get in touch.
+                </p>
+              </div>
+            </a>
+          </div>
+        </section>
+      </main>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,39 @@
+@font-face {
+  font-family: "DIN 2014";
+  src: url("../font/Font-light.otf") format("opentype");
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
+
+@import "tailwindcss";
+
+@theme {
+  --color-font: #484a46;
+  --color-link: #2a312e;
+  --font-sans: "DIN 2014", ui-sans-serif, system-ui, sans-serif;
+}
+
+@layer base {
+  body {
+    @apply font-sans text-font;
+  }
+  a {
+    @apply font-sans text-link;
+  }
+}
+
+@layer components {
+}
+/* put custom buttons cards component here */
+@layer utilities {
+  .border-gray-lr {
+    @apply border-l border-r border-gray-100;
+  }
+  .nav-link {
+    font-weight: 900;
+    line-height: 14px;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+  }
+}
