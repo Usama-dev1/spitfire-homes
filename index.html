@@ -30,7 +30,7 @@
                 <i class="fa-solid fa-magnifying-glass"></i>
               </li>
               <li
-                class="hover:border-t hover:border-t-taupe-400 hidden xl: lg:block nav-link"
+                class="hover:border-t hover:border-t-taupe-400 hidden lg:block nav-link"
               >
                 <a
                   href=""
@@ -38,9 +38,7 @@
                   >Find Your Home</a
                 >
               </li>
-              <li
-                class="group hover:border-t hover:border-t-taupe-400 hidden lg:block nav-link"
-              >
+              <li class="group hover:border-t hidden lg:block nav-link">
                 <a
                   href=""
                   class="text-[clamp(10px,1vw,16px)] tracking-wider leading-6 font-extrabold"
@@ -342,8 +340,9 @@
           <!-- background overlay image-->
           <div class="absolute inset-0">
             <img
+              id="hero-slider"
               src="./images/slider_images/1.jpg"
-              class="w-full h-full object-cover"
+              class="w-full h-full object-cover transition-all duration-1000 ease-in-out opacity-100 scale-100"
               alt="slider_image"
             />
             <div class="absolute inset-0 bg-black/40"></div>
@@ -408,7 +407,7 @@
               </form>
             </div>
 
-            <a href="#" class="hidden lg:block mt-10">
+            <a href="#move_section" class="hidden lg:block mt-10">
               <i
                 class="cursor-pointer text-gray-50/30 text-3xl fa-solid fa-angle-down"
               ></i>
@@ -422,7 +421,10 @@
           <div
             class="bg-white w-[90%] py-10 xl:py-24 mx-auto md:px-4 2xl:max-w-575"
           >
-            <div class="grid grid-cols-1 lg:grid-cols-3 2xl:grid-cols-4 gap-4">
+            <div
+              id="move_section"
+              class="grid grid-cols-1 lg:grid-cols-3 2xl:grid-cols-4 gap-4"
+            >
               <!-- full-width/card-->
               <div
                 class="h-auto bg-white md:pr-[30%] mb-12 lg:col-span-3 2xl:col-span-1"
@@ -1097,7 +1099,7 @@
                     src="./images/footer_logos/footer_logo.webp"
                     class="w-full lg:w-[180px] mb-[30px]"
                   />
-                  <ul class="flex justify-space-evenly items-center gap-5">
+                  <ul class="flex items-center gap-5">
                     <li>
                       <i class="fab fa-facebook-square"></i>
                     </li>
@@ -1183,23 +1185,21 @@
                         <li>
                           <a
                             href=""
-                            class="hover:text-[#998125] font-semibold text-white uppercase text-[14px] leading-[14px] tracking-[0.5px] font-normal transition-all duration-200"
+                            class="hover:text-[#998125] font-semibold text-white uppercase text-[14px] leading-[14px] tracking-[0.5px] transition-all duration-200"
                             >Contact Us</a
                           >
                         </li>
-                        <li
-                          class="hover:text-[#998125] font-semibold text-white uppercase text-[14px] leading-[14px] tracking-[0.5px] font-normal transition-all duration-200"
-                        >
+                        <li>
                           <a
                             href=""
-                            class="hover:text-[#998125] font-semibold text-white uppercase text-[14px] leading-[14px] tracking-[0.5px] font-normal transition-all duration-200"
+                            class="hover:text-[#998125] font-semibold text-white uppercase text-[14px] leading-[14px] tracking-[0.5px] transition-all duration-200"
                             >Spitfire Concierge</a
                           >
                         </li>
                         <li class="">
                           <a
                             href=""
-                            class="hover:text-[#998125] font-semibold text-white uppercase text-[14px] leading-[14px] tracking-[0.5px] font-normal transition-all duration-200"
+                            class="hover:text-[#998125] font-semibold text-white uppercase text-[14px] leading-[14px] tracking-[0.5px] transition-all duration-200"
                             >Customer Care</a
                           >
                         </li>
