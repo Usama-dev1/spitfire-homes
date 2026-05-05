@@ -44,4 +44,9 @@
     letter-spacing: 0.5px;
     text-transform: uppercase;
   }
+  .rotate-45 {
+    transform: rotate(45deg);
+    display: inline-block;
+    transition: transform 0.2s ease;
+  }
 }

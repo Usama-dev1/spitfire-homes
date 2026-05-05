@@ -260,9 +260,6 @@
   .mt-2 {
     margin-top: calc(var(--spacing) * 2);
   }
-  .mt-3 {
-    margin-top: calc(var(--spacing) * 3);
-  }
   .mt-4 {
     margin-top: calc(var(--spacing) * 4);
   }
@@ -280,6 +277,9 @@
   }
   .mt-\[19px\] {
     margin-top: 19px;
+  }
+  .mr-4 {
+    margin-right: calc(var(--spacing) * 4);
   }
   .mr-\[40px\] {
     margin-right: 40px;
@@ -416,6 +416,9 @@
     --tw-scale-y: 100%;
     --tw-scale-z: 100%;
     scale: var(--tw-scale-x) var(--tw-scale-y);
+  }
+  .rotate-45 {
+    rotate: 45deg;
   }
   .transform {
     transform: var(--tw-rotate-x,) var(--tw-rotate-y,) var(--tw-rotate-z,) var(--tw-skew-x,) var(--tw-skew-y,);
@@ -1365,6 +1368,11 @@
     line-height: 14px;
     letter-spacing: 0.5px;
     text-transform: uppercase;
+  }
+  .rotate-45 {
+    transform: rotate(45deg);
+    display: inline-block;
+    transition: transform 0.2s ease;
   }
 }
 @property --tw-translate-x {

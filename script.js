@@ -28,3 +28,22 @@ setInterval(() => {
   currentIndex = (currentIndex + 1) % images.length;
   sliderImg.src = images[currentIndex];
 }, 3000);
+
+//footer links toggle
+const quickToggle = document.getElementById("quick_links_toggle");
+const quickList = document.getElementById("quick_links");
+
+quickToggle.addEventListener("click", function () {
+  const isOpen = !quickList.classList.contains("hidden");
+  quickList.classList.toggle("hidden", isOpen);
+  quickToggle.classList.toggle("rotate-45", !isOpen);
+});
+
+const helpToggle = document.getElementById("help_links_toggle");
+const helpList = document.getElementById("help_links");
+
+helpToggle.addEventListener("click", function () {
+  const isOpen = !helpList.classList.contains("hidden");
+  helpList.classList.toggle("hidden", isOpen);
+  helpToggle.classList.toggle("rotate-45", !isOpen);
+});
